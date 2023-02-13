@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image:url(./images/Valentines-Day-Background-Wallpaper.webp);
+            background-size:cover;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="message"></p>
+    <div>
+    <img class="picture" src="./images/red-heart.png" alt="heart" width="200" height="200" >
+    </div>
+    <div class="photo"></div>
+   
+
+    
+</body>
+
+<script>
+    let image=document.querySelector(".picture")
+    let message=document.querySelector(".message")
+    image.addEventListener("click",text)
+
+
+    function text(){
+        message.innerHTML="HAPPY VALENTINE's DAY"
+        message.style.color="red"
+        message.style.textAlign="center"
+        message.style.fontSize="60px"
+        let img=document.createElement("img");
+        img.src="./images/red-heart.png";
+        let src=document.querySelector(".photo");
+        src.appendChild(img);
+
+    }
+    
+</script>
+</html>
